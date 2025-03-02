@@ -238,12 +238,13 @@ p .shine
 }
 
 .invitation h1 {
-    font-size: 45px;
-    font-weight: 700;
-    font-family: "Alex Brush", serif ;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Allura", serif;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
    
 }
 
@@ -338,7 +339,7 @@ p .shine
          -webkit-animation-iteration-count: infinite;
         
          font-size: 75px !important; 
-         font-family: "Alex Brush", serif !important;
+         font-family: "Allura", serif !important;
          font-weight: 400 !important;
          font-style: normal !important;
          text-transform: capitalize !important;
@@ -439,7 +440,7 @@ p .shine
 }
 .parents h2{
     font-size: 50px;
-    font-family: "Alex Brush", serif ;
+    font-family: "Allura", serif;
     text-align: center;
      /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
      background: linear-gradient(-75deg, #c7801d 20%, #dbc131f7 30%, #c7801d 45%, #dbc131f7 75%, #bf9a47 100%);
@@ -545,7 +546,7 @@ p .shine
 .itinerario .evento .item .nombre{
     font-size: 5vw;
     color: #844414;
-    font-family: "Alex Brush", serif ;
+    font-family: "Allura", serif;
     margin: auto;
 }
 
@@ -615,7 +616,7 @@ p .shine
     font-family: "Raleway", serif;
 }
 .ceremony span{
-    font-family: "Alex Brush", serif ;
+    font-family: "Allura", serif;
     font-size: 35px;
     color:  #844414;
 
@@ -644,7 +645,7 @@ hr {
 .vestimenta h1{
     font-size: 45px;
     font-weight: 700;
-    font-family: "Alex Brush", serif ;
+    font-family: "Allura", serif;
     color: #cc9842;
     text-align: center;
     margin-bottom: 20px;
@@ -665,7 +666,7 @@ hr {
 .lluvia-sobres h1{
     font-size: 45px;
     font-weight: 700;
-    font-family: "Alex Brush", serif ;
+    font-family: "Allura", serif;
     color: #cc9842;
     text-align: center;
     margin-bottom: 20px;
@@ -686,7 +687,7 @@ hr {
 .message-nice h1{
     font-size: 45px;
     font-weight: 700;
-    font-family: "Alex Brush", serif ;
+    font-family: "Allura", serif;
     color: #cc9842;
     text-align: center;
     margin-bottom: 20px;
@@ -758,7 +759,7 @@ hr {
 
 .form-confirmacion h1 {
     font-size: 36px;
-    font-family: "Alex Brush", serif ; /* Fuente elegante */
+    font-family: "Allura", serif; /* Fuente elegante */
     color: #cc9842; /* Color rosa oscuro */
     margin-bottom: 20px;
 }
