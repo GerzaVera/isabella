@@ -1,0 +1,885 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima del viewport */
+    background-image: url('../images/content/fondoAlt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    animation: moverFondo 20s linear infinite;
+    
+}
+@keyframes moverFondo {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: -200% 50%;
+    }
+    0% {
+        background-position: 0% 50%;
+    }
+}
+/* Ajuste para pantallas grandes */
+@media screen and (min-width: 1024px) {
+    body {
+        background-size: 120% auto; /* Ajuste para monitores grandes */
+        animation: moverFondo 10s linear infinite; /* Más lento en desktop */
+    }
+}
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover; /* Para que ocupe toda la pantalla sin desbordarse */
+        animation: moverFondo 30s linear infinite; /* Más lento en móviles */
+    }
+}
+
+/*animacion de nieve */
+
+#snow {
+    background: none;
+    background-image: url('../images/header/dr2.png');
+  
+    position: fixed; /* Fijo en toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999; /* Asegura que quede encima de otros elementos */
+    pointer-events: none; /* Evita que interfiera con la interacción */
+    
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 250px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 250px, 100px 200px, -150px 100px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 250px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 250px, 100px 200px, -150px 100px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+/*titulo xv*/
+.title-xv {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Rouge Script', serif; /* Fuente elegante */
+    color: #ffffff; /* Color rosa oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+     animation: shine 2s infinite;/* Aplicar la animación de zoom */
+}
+
+/* Animación de zoom */
+@keyframes zoom {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.3); /* Escalar un 10% */
+    }
+    100% {
+        transform: scale(1); /* Volver al tamaño normal */
+    }
+}
+
+p .shine
+        {
+            font-size: 100px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        
+        .shine
+        {
+            background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);
+            -webkit-background-size: 125px;
+            color: rgba(255, 255, 255, 0.1);
+            -webkit-background-clip: text;
+            -webkit-animation-name: shine;
+            -webkit-animation-duration: 30s;
+            -webkit-animation-iteration-count: infinite;
+        }
+        
+        @-webkit-keyframes shine
+        {
+            0%
+            {
+                background-position: top left;
+            }
+            100%
+            {
+                background-position: top right;
+            }
+        }
+
+
+/* Botón circular */
+.open-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    transform: translate(-50%, -50%); /* Centrado exacto */
+    /*background: linear-gradient(to right, #B07676, #FDD5CF);*/
+    background-image: url(../images/header/pngtree-abstract-circle-oil-painted-pink-gold-brush-stroke-png-image_4451195-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+    animation: latido 1.5s infinite; /* Aplicar la animación de latido */
+}
+.open-button:hover{
+   
+    box-shadow: 0 6px 12px #FDD5CF;
+    transition:300ms ease-in-out;
+}
+@keyframes latido {
+    0% {
+        transform: translate(-50%, -50%) scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1); /* Escalar un 10% */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Volver al tamaño normal */
+    }
+}
+
+/* Efecto de división del fondo */
+.split-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.left-panel, .right-panel {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #B07676, #FDD5CF);
+    transition: transform 2s ease;
+}
+.left-panel {
+    transform-origin: left;
+    
+}
+.right-panel {
+    transform-origin: right;
+}
+/* Invitación */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Espacio arriba y abajo */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.invitation {
+    width: 90%;
+    max-width: 900px; /* Evita que sea muy grande en pantallas grandes */
+    background: rgba(231, 214, 214, 0.21);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease;
+    align-items: center;
+    margin: auto; /* Centrado vertical con margen */
+}
+.invitation-img {
+    width: 450px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 60%; /* Si quieres una imagen redonda */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente y da espacio abajo */
+}
+
+.invitation h1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Dancing Script', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+.invitation p {
+    font-size: 26px;
+    margin: 10px 0;
+}
+.remember{
+    color: #fff;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 24px;
+}
+/* Clases para activar el efecto */
+.open .left-panel {
+    transform: scaleX(0);
+}
+.open .right-panel {
+    transform: scaleX(0);
+}
+.open .invitation {
+    opacity: 1;
+}
+.open .open-button {
+    opacity: 0;
+    pointer-events: none; /* Desactiva el botón después de hacer clic */
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+   /* background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(247, 213, 150, 0.2);
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    z-index: 1;
+  }
+  
+  .floating-button:hover {
+    background-color: #f7f7f7;
+  }
+
+  
+/*fin de division*/
+
+  .wd_about_wrapper {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    overflow: hidden;
+    background-image: url(../images/header/cintilloAlter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: deslizar 2.5s forwards; /* Aplicar la animación */
+    margin-bottom: 5rem;
+  }
+  
+ 
+  .wd_about_wrapper h2 {
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+     }
+
+     .shine2
+     {
+         /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
+         background: linear-gradient(-75deg, #c7801d 0%, #f2db5af7 30%, #c7801d 45%, #f0d431c8 75%, #bf9a47 100%);
+         -webkit-background-size: 125px;
+         color: rgba(255, 255, 255, 0.1);
+         -webkit-background-clip: text;
+         -webkit-animation-name: shine2;
+         -webkit-animation-duration: 30s;
+         -webkit-animation-iteration-count: infinite;
+     }
+     
+     @-webkit-keyframes shine2
+     {
+         0%
+         {
+             background-position: top left;
+         }
+         100%
+         {
+             background-position: top right;
+         }
+     }
+
+  .date-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 15rem;
+    color: #fff;
+    font-family: 'Tilt Neon', sans-serif;
+    text-transform: uppercase;
+    
+}
+.date-event{
+    color: #fbdebca0;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+.decoracion img{
+    width: 300px;
+    text-align: center;
+    margin: 0px;
+}
+
+
+#clockdiv{
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    left: 0;
+    overflow: hidden;
+    background-image: url(../images/header/cintilloAlter2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: deslizar 2.5s forwards; /* Aplicar la animación */
+    margin-bottom: 5rem;
+    color:  #844414;
+    
+}
+
+
+
+#clockdiv > div{
+	display: inline-block;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+#clockdiv div > span{
+    margin: 15px 10px;
+    width: 150%;
+    font-size: 54px;
+    font-family: 'Tilt Neon', sans-serif;
+    text-align: center;
+     /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
+     background: linear-gradient(-75deg, #c7801d 0%, #f2db5af7 30%, #c7801d 45%, #f0d431c8 75%, #bf9a47 100%);
+     -webkit-background-size: 125px;
+     color: rgba(255, 255, 255, 0.1);
+     -webkit-background-clip: text;
+     -webkit-animation-name: shine2;
+     -webkit-animation-duration: 30s;
+     -webkit-animation-iteration-count: infinite;
+ 
+}
+
+
+
+.parents{
+    font-family: 'Tilt Neon', serif;
+    font-size: 48px;
+    color: #fff;
+    margin-top: 25rem;
+    align-items: center;
+}
+.parents h2{
+    font-size: 50px;
+    font-family: 'Dancing Script', serif;
+    text-align: center;
+     /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
+     background: linear-gradient(-75deg, #c7801d 20%, #dbc131f7 30%, #c7801d 45%, #dbc131f7 75%, #bf9a47 100%);
+     -webkit-background-size: 125px;
+     color: rgba(255, 255, 255, 0.1);
+     -webkit-background-clip: text;
+     -webkit-animation-name: shine2;
+     -webkit-animation-duration: 30s;
+     -webkit-animation-iteration-count: infinite;
+ 
+}
+
+.parents img{
+    width: 630px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+
+.divMapa{
+    
+    float: left;
+    position: absolute;
+    
+    width: auto;
+    height: 120px;
+    overflow: hidden;
+    /*color: #c7801d;*/
+    color:  #844414;
+    display: inline-block;
+    text-align: center;  
+    background-image: url(../images/content/mapAlt.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: deslizar 2.5s forwards; /* Aplicar la animación */
+ 
+}
+
+
+
+
+/* ITINERARIO */
+.itinerario{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.itinerario .evento{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap:10%;
+    margin-top: 3vw;
+    background: linear-gradient(to right,#FDD5CF, #B07676);
+    border-radius: 5vw;
+    padding: 2vw;
+    backdrop-filter: blur(1vw);
+}
+
+.itinerario .evento .icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itinerario .evento .icono .circulo{
+    margin: auto;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(247, 213, 150, 0.2);
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itinerario .evento .icono .circulo img{
+    margin: auto;
+    width: 60%;
+}
+
+.itinerario .evento .item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.itinerario .evento .item .nombre{
+    font-size: 5vw;
+    color: #844414;
+    font-family: 'Dancing Script';
+    margin: auto;
+}
+
+.itinerario .evento .item .hora{
+    font-size: 4vw;
+    color: white;
+    font-weight: 900;
+    font-family: 'Tilt Neon', serif;
+    margin: auto;
+}
+
+@media (min-width:1100px){
+
+.itinerario{
+    width: 70%;
+    margin-top: 0%;
+}
+
+.itinerario .evento{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 50px;
+    margin-top: 8px;
+    border-radius: 15px;
+    padding: 8px;
+    backdrop-filter: blur(6px);
+}
+
+
+
+.itinerario .evento .icono .circulo{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.itinerario .evento .icono .circulo img{
+    width: 60%;
+}
+
+
+.itinerario .evento .item .nombre{
+    font-size: 35px;
+}
+
+.itinerario .evento .item .hora{
+    font-size: 32px;
+} 
+}
+
+
+
+
+
+
+.ceremony{
+    margin-top: 3rem;
+}
+.ceremony img{
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.ceremony h1{
+    font-size: 38px;
+    font-family: 'Tilt Neon';
+}
+.ceremony span{
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color:  #844414;
+
+}
+.ceremony p{
+    font-family: 'Tilt Neon';
+    font-size: 18px;
+    color: #fff;
+}
+.ceremony a img{
+    margin: 0 auto;
+    box-shadow: none;
+}
+hr {
+    border: none;
+    height: 3px; /* Grosor de la línea */
+    background-color: #CF9500; /* Color dorado sólido */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+.section-xv{
+    margin-top: 3rem;
+}
+.vestimenta{
+    margin-top: 3rem;
+}
+.vestimenta h1{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    color: #cc9842;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.vestimenta img{
+    width: 100px;
+    margin: 0 auto;
+}
+.vestimenta p{
+    font-family: 'Tilt Neon';
+    font-size: 20px;
+    color: #fff;
+}
+
+.lluvia-sobres{
+    margin-top: 3rem;
+}
+.lluvia-sobres h1{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    color: #cc9842;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.lluvia-sobres img{
+    width: 100px;
+    margin: 0 auto;
+}
+.lluvia-sobres p{
+    font-family: 'Tilt Neon';
+    font-size: 20px;
+    color: #fff;
+}
+
+.message-nice{
+    margin-top: 3rem;
+}
+.message-nice h1{
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    color: #cc9842;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.message-nice img{
+    width: 100px;
+    margin: 0 auto;
+}
+.message-nice p{
+    font-family: 'Tilt Neon';
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Estilos para el formulario */
+.message-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.message-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #cc9842;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Tilt Neon', serif;
+    resize: vertical; /* Permite redimensionar verticalmente */
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    color: #333;
+}
+
+.message-form textarea::placeholder {
+    color: #666;
+}
+
+.message-form button {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Tilt Neon';
+}
+
+
+.message-form button:hover {
+    box-shadow: 0 6px 12px #FDD5CF;
+    transition:300ms ease-in-out;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+/*CONFIRMACION FORM*/
+/* Estilos generales para la sección de confirmación */
+.form-confirmacion {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(214, 211, 211, 0.2);
+}
+
+.form-confirmacion h1 {
+    font-size: 36px;
+    font-family: 'Dancing Script', serif; /* Fuente elegante */
+    color: #cc9842; /* Color rosa oscuro */
+    margin-bottom: 20px;
+}
+
+.form-confirmacion p {
+    font-size: 18px;
+    font-family: 'Tilt Neon', serif;
+    color: #cc9842;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el formulario */
+.form-confirmacion form {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-confirmacion .form-label {
+    font-family: 'Tilt Neon', serif;
+    font-size: 14px;
+    color: #cc9842; /* Color rosa oscuro */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-confirmacion .form-control,
+.form-confirmacion .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cc9842; /* Borde rosa oscuro */
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Tilt Neon', serif;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    color: #595757;
+}
+
+.form-confirmacion .form-control::placeholder {
+    color: #666;
+}
+
+.form-confirmacion .form-select {
+    appearance: none; /* Elimina el estilo por defecto del select */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23cc9842'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Estilos para el botón de confirmar */
+.form-confirmacion .btn-confirmar {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Tilt Neon';
+}
+
+.form-confirmacion .btn-confirmar:hover {
+    box-shadow: 0 6px 12px #FDD5CF;
+    transition:300ms ease-in-out;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilos para el botón de WhatsApp */
+.wd_btn .btn-primary {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Tilt Neon';
+}
+
+.wd_btn .btn-primary:hover {
+    box-shadow: 0 6px 12px #FDD5CF;
+    transition:300ms ease-in-out;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .form-confirmacion {
+        padding: 20px 10px;
+    }
+
+    .form-confirmacion h1 {
+        font-size: 28px;
+    }
+
+    .form-confirmacion p {
+        font-size: 16px;
+    }
+
+    .form-confirmacion .form-control,
+    .form-confirmacion .form-select {
+        font-size: 14px;
+    }
+
+    .form-confirmacion .btn-confirmar {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+/*MOVILES*/
+/* Ajuste para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .invitation-img {
+        width: 200px; /* Reduce el tamaño de la imagen en móviles */
+        display: block; /* Asegura que la imagen sea un bloque */
+        margin-left: auto; /* Centra horizontalmente */
+        margin-right: auto; /* Centra horizontalmente */
+    }
+    .invitation{
+        width: 90%;
+    }
+
+    .wd_about_wrapper{
+    width: 100%;
+    height: 100px;
+    }
+}
