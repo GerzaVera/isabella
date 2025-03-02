@@ -88,7 +88,7 @@ body {
 .title-xv {
     font-size: 50px;
     font-weight: 700;
-    font-family: 'Rouge Script', serif; /* Fuente elegante */
+    
     color: #ffffff; /* Color rosa oscuro */
     text-align: center;
     margin-bottom: 20px;
@@ -240,7 +240,7 @@ p .shine
 .invitation h1 {
     font-size: 45px;
     font-weight: 700;
-    font-family: 'Dancing Script', sans-serif;
+    font-family: "Alex Brush", serif ;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 20px;
@@ -253,7 +253,7 @@ p .shine
 }
 .remember{
     color: #fff;
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: "Raleway", serif;
     font-size: 24px;
 }
 /* Clases para activar el efecto */
@@ -318,7 +318,7 @@ p .shine
   
  
   .wd_about_wrapper h2 {
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: "Raleway", serif;
     font-weight: bolder;
     font-size: 45px;
     line-height: 1;
@@ -336,6 +336,13 @@ p .shine
          -webkit-animation-name: shine2;
          -webkit-animation-duration: 30s;
          -webkit-animation-iteration-count: infinite;
+        
+         font-size: 75px !important; 
+         font-family: "Alex Brush", serif !important;
+         font-weight: 400 !important;
+         font-style: normal !important;
+         text-transform: capitalize !important;
+         
      }
      
      @-webkit-keyframes shine2
@@ -350,12 +357,17 @@ p .shine
          }
      }
 
+     .shine3 h3{
+        font-family: "Raleway", serif !important;
+       
+     }
+
   .date-title {
     font-size: 35px;
     font-weight: bold;
     margin-top: 15rem;
     color: #fff;
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: "Raleway", serif;
     text-transform: uppercase;
     
 }
@@ -427,7 +439,7 @@ p .shine
 }
 .parents h2{
     font-size: 50px;
-    font-family: 'Dancing Script', serif;
+    font-family: "Alex Brush", serif ;
     text-align: center;
      /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
      background: linear-gradient(-75deg, #c7801d 20%, #dbc131f7 30%, #c7801d 45%, #dbc131f7 75%, #bf9a47 100%);
@@ -533,7 +545,7 @@ p .shine
 .itinerario .evento .item .nombre{
     font-size: 5vw;
     color: #844414;
-    font-family: 'Dancing Script';
+    font-family: "Alex Brush", serif ;
     margin: auto;
 }
 
@@ -541,7 +553,7 @@ p .shine
     font-size: 4vw;
     color: white;
     font-weight: 900;
-    font-family: 'Tilt Neon', serif;
+    font-family: "Raleway", serif;
     margin: auto;
 }
 
@@ -600,16 +612,16 @@ p .shine
 }
 .ceremony h1{
     font-size: 38px;
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
 }
 .ceremony span{
-    font-family: 'Dancing Script';
+    font-family: "Alex Brush", serif ;
     font-size: 35px;
     color:  #844414;
 
 }
 .ceremony p{
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
     font-size: 18px;
     color: #fff;
 }
@@ -632,7 +644,7 @@ hr {
 .vestimenta h1{
     font-size: 45px;
     font-weight: 700;
-    font-family: 'Dancing Script';
+    font-family: "Alex Brush", serif ;
     color: #cc9842;
     text-align: center;
     margin-bottom: 20px;
@@ -642,7 +654,7 @@ hr {
     margin: 0 auto;
 }
 .vestimenta p{
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
     font-size: 20px;
     color: #fff;
 }
@@ -653,7 +665,7 @@ hr {
 .lluvia-sobres h1{
     font-size: 45px;
     font-weight: 700;
-    font-family: 'Dancing Script';
+    font-family: "Alex Brush", serif ;
     color: #cc9842;
     text-align: center;
     margin-bottom: 20px;
@@ -663,7 +675,7 @@ hr {
     margin: 0 auto;
 }
 .lluvia-sobres p{
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
     font-size: 20px;
     color: #fff;
 }
@@ -674,7 +686,7 @@ hr {
 .message-nice h1{
     font-size: 45px;
     font-weight: 700;
-    font-family: 'Dancing Script';
+    font-family: "Alex Brush", serif ;
     color: #cc9842;
     text-align: center;
     margin-bottom: 20px;
@@ -684,7 +696,7 @@ hr {
     margin: 0 auto;
 }
 .message-nice p{
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
     font-size: 20px;
     color: #fff;
 }
@@ -701,7 +713,7 @@ hr {
     border: 2px solid #cc9842;
     border-radius: 10px;
     font-size: 16px;
-    font-family: 'Tilt Neon', serif;
+    font-family: "Raleway", serif;
     resize: vertical; /* Permite redimensionar verticalmente */
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
@@ -723,7 +735,7 @@ hr {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
 }
 
 
@@ -746,14 +758,14 @@ hr {
 
 .form-confirmacion h1 {
     font-size: 36px;
-    font-family: 'Dancing Script', serif; /* Fuente elegante */
+    font-family: "Alex Brush", serif ; /* Fuente elegante */
     color: #cc9842; /* Color rosa oscuro */
     margin-bottom: 20px;
 }
 
 .form-confirmacion p {
     font-size: 18px;
-    font-family: 'Tilt Neon', serif;
+    font-family: "Raleway", serif;
     color: #cc9842;
     margin-bottom: 30px;
 }
@@ -767,7 +779,7 @@ hr {
 }
 
 .form-confirmacion .form-label {
-    font-family: 'Tilt Neon', serif;
+    font-family: "Raleway", serif;
     font-size: 14px;
     color: #cc9842; /* Color rosa oscuro */
     margin-bottom: 10px;
@@ -811,7 +823,7 @@ hr {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
 }
 
 .form-confirmacion .btn-confirmar:hover {
@@ -832,7 +844,7 @@ hr {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Tilt Neon';
+    font-family: "Raleway", serif;
 }
 
 .wd_btn .btn-primary:hover {
@@ -881,5 +893,8 @@ hr {
     .wd_about_wrapper{
     width: 100%;
     height: 100px;
+    }
+    .shine2{
+        font-size: 45px !important; 
     }
 }
