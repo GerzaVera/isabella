@@ -86,10 +86,10 @@ body {
 
 /*titulo xv*/
 .title-xv {
-    font-size: 50px;
+    font-size: 55px !important;
     font-weight: 700;
     
-    color: #ffffff; /* Color rosa oscuro */
+    color:#844414 !important; /* Color cafe oscuro */
     text-align: center;
     margin-bottom: 20px;
      animation: shine 2s infinite;/* Aplicar la animación de zoom */
@@ -326,11 +326,11 @@ p .shine
     text-transform: uppercase;
     margin-bottom: 5rem;
      }
-
+     
      .shine2
      {
          /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
-         background: linear-gradient(-75deg, #c7801d 0%, #f2db5af7 30%, #c7801d 45%, #f0d431c8 75%, #bf9a47 100%);
+         background: linear-gradient(-75deg,  #844414 0%, #b27d61f7 30%, #844414 45%, #b27d61f7 75%, #844414 100%);
          -webkit-background-size: 125px;
          color: rgba(255, 255, 255, 0.1);
          -webkit-background-clip: text;
