@@ -86,12 +86,12 @@ body {
 
 /*titulo xv*/
 .title-xv {
-    font-size: 55px !important;
+    font-size: 65px !important;
     font-weight: 700;
-    
-    color:#844414 !important; /* Color cafe oscuro */
+    font-family: 'Allura', cursive;
+    color:#694C45 !important; /* Color cafe oscuro */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
      animation: shine 2s infinite;/* Aplicar la animación de zoom */
 }
 
@@ -117,12 +117,12 @@ p .shine
         
         .shine
         {
-            background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);
+            background: linear-gradient(90deg, #694C45 0%, #DEA193 20%, #f7cdc3 70%, #DEA193 60%, #694C45 100%);
             -webkit-background-size: 125px;
             color: rgba(255, 255, 255, 0.1);
             -webkit-background-clip: text;
             -webkit-animation-name: shine;
-            -webkit-animation-duration: 30s;
+            -webkit-animation-duration: 10s;
             -webkit-animation-iteration-count: infinite;
         }
         
@@ -160,14 +160,15 @@ p .shine
     text-align: center;
     color: #fff;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+    box-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 2;
     animation: latido 1.5s infinite; /* Aplicar la animación de latido */
 }
 .open-button:hover{
    
-    box-shadow: 0 6px 12px #FDD5CF;
+    box-shadow: 0 6px 12px #DEA193;
     transition:300ms ease-in-out;
 }
 @keyframes latido {
@@ -195,7 +196,7 @@ p .shine
 .left-panel, .right-panel {
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, #B07676, #FDD5CF);
+    background: linear-gradient(to right, #DEA193,#ebccc5);
     transition: transform 2s ease;
 }
 .left-panel {
@@ -240,22 +241,24 @@ p .shine
 .invitation h1 {
     font-size: 50px;
     font-weight: 400;
-    font-family: "Allura", serif;
-    color: #FFFFFF;
+    font-family: "Allura", cursive;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
    
 }
 
 .invitation p {
     font-size: 26px;
     margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
 }
 .remember{
     color: #fff;
-    font-family: "Raleway", serif;
-    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
 }
 /* Clases para activar el efecto */
 .open .left-panel {
@@ -278,13 +281,12 @@ p .shine
     right: 20px;
     width: 60px;
     height: 60px;
-   /* background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+   /* background: linear-gradient(90deg, #694C45 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #694C45 100%);*/
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     color: white;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(247, 213, 150, 0.2);
+    box-shadow: 0 4px 8px rgba(247, 87, 87, 0.098);
     cursor: pointer;
     font-size: 24px;
     display: flex;
@@ -308,41 +310,34 @@ p .shine
     height: 120px;
     left: 0;
     overflow: hidden;
-    background-image: url(../images/header/cintilloAlter.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     animation: deslizar 2.5s forwards; /* Aplicar la animación */
-    margin-bottom: 5rem;
+    margin-bottom: 2px;
   }
   
  
   .wd_about_wrapper h2 {
-    font-family: "Raleway", serif;
-    font-weight: bolder;
-    font-size: 45px;
-    line-height: 1;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
+    
+    font-size: 65px !important; 
+         font-family: "Allura", cursive !important;
+         font-weight: 400 !important;
+         font-style: normal !important;
+         text-transform: capitalize !important;
+         
      }
      
      .shine2
      {
-         /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
-         background: linear-gradient(-75deg,  #844414 0%, #b27d61f7 30%, #844414 45%, #b27d61f7 75%, #844414 100%);
-         -webkit-background-size: 125px;
+         /*background: linear-gradient(90deg, #694C45 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #694C45 100%);*/
+         background: linear-gradient(90deg, #401F18 0%, #DEA193 20%, #f7cdc3 70%, #a86f5c 60%, #401F18 100%);
+        -webkit-background-size: 125px;
          color: rgba(255, 255, 255, 0.1);
          -webkit-background-clip: text;
          -webkit-animation-name: shine2;
          -webkit-animation-duration: 30s;
          -webkit-animation-iteration-count: infinite;
         
-         font-size: 75px !important; 
-         font-family: "Allura", serif !important;
-         font-weight: 400 !important;
-         font-style: normal !important;
-         text-transform: capitalize !important;
+         
          
      }
      
@@ -359,22 +354,22 @@ p .shine
      }
 
      .shine3 h3{
-        font-family: "Raleway", serif !important;
+        font-family: "Raleway", sans-serif !important;
        
      }
 
   .date-title {
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 38px;
     margin-top: 15rem;
     color: #fff;
-    font-family: "Raleway", serif;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
     
 }
 .date-event{
-    color: #fbdebca0;
-    font-family: 'Tilt Neon', sans-serif;
+    color: #a86f5c;
+    font-family: 'Raleway', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 5rem;
@@ -393,14 +388,10 @@ p .shine
     height: 120px;
     left: 0;
     overflow: hidden;
-    background-image: url(../images/header/cintilloAlter2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     animation: deslizar 2.5s forwards; /* Aplicar la animación */
     margin-bottom: 5rem;
-    color:  #844414;
+    color:  #694C45;
     
 }
 
@@ -408,49 +399,39 @@ p .shine
 
 #clockdiv > div{
 	display: inline-block;
-    font-family: 'Tilt Neon', sans-serif;
-    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
     text-align: center;
 }
 #clockdiv div > span{
     margin: 15px 10px;
     width: 150%;
     font-size: 54px;
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
-     /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
-     background: linear-gradient(-75deg, #c7801d 0%, #f2db5af7 30%, #c7801d 45%, #f0d431c8 75%, #bf9a47 100%);
-     -webkit-background-size: 125px;
-     color: rgba(255, 255, 255, 0.1);
-     -webkit-background-clip: text;
-     -webkit-animation-name: shine2;
-     -webkit-animation-duration: 30s;
-     -webkit-animation-iteration-count: infinite;
- 
+     /*background: linear-gradient(90deg, #694C45 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #694C45 100%);*/
+    margin-bottom: 15rem;
 }
 
 
 
 .parents{
-    font-family: 'Tilt Neon', serif;
-    font-size: 48px;
+    font-family: 'Allura', cursive;
+    font-size: 65px;
     color: #fff;
     margin-top: 25rem;
     align-items: center;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
+
 }
 .parents h2{
-    font-size: 50px;
-    font-family: "Allura", serif;
+    font-size: 65px;
+    font-family: "Allura", cursive;
     text-align: center;
-     /*background: linear-gradient(90deg, #844414 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #844414 100%);*/
-     background: linear-gradient(-75deg, #c7801d 20%, #dbc131f7 30%, #c7801d 45%, #dbc131f7 75%, #bf9a47 100%);
-     -webkit-background-size: 125px;
-     color: rgba(255, 255, 255, 0.1);
-     -webkit-background-clip: text;
-     -webkit-animation-name: shine2;
-     -webkit-animation-duration: 30s;
-     -webkit-animation-iteration-count: infinite;
- 
+    color: #694C45;
+     /*background: linear-gradient(90deg, #694C45 0%, #c7801d 20%, #ffe233 50%, #c7801d 80%, #694C45 100%);*/
+     
 }
 
 .parents img{
@@ -469,7 +450,7 @@ p .shine
     height: 120px;
     overflow: hidden;
     /*color: #c7801d;*/
-    color:  #844414;
+   
     display: inline-block;
     text-align: center;  
     background-image: url(../images/content/mapAlt.png);
@@ -486,13 +467,13 @@ p .shine
 
 /* ITINERARIO */
 .itinerario{
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .itinerario .evento{
@@ -500,10 +481,11 @@ p .shine
     grid-template-columns: 45% 45%;
     column-gap:10%;
     margin-top: 3vw;
-    background: linear-gradient(to right,#FDD5CF, #B07676);
+    background: linear-gradient(to right,#c7b2ad25, #dea193a3);
     border-radius: 5vw;
     padding: 2vw;
     backdrop-filter: blur(1vw);
+    height: 250px;
 }
 
 .itinerario .evento .icono{
@@ -515,11 +497,10 @@ p .shine
 
 .itinerario .evento .icono .circulo{
     margin: auto;
-    width: 16vw;
-    height: 16vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     color: white;
     border: none;
     border-radius: 50%;
@@ -544,17 +525,19 @@ p .shine
 }
 
 .itinerario .evento .item .nombre{
-    font-size: 5vw;
-    color: #844414;
-    font-family: "Allura", serif;
+    font-size: 9vw;
+    color: #694C45;
+    font-family: "Allura", cursive;
     margin: auto;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
 }
 
 .itinerario .evento .item .hora{
-    font-size: 4vw;
+    font-size: 5vw;
     color: white;
-    font-weight: 900;
-    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
     margin: auto;
 }
 
@@ -603,7 +586,14 @@ p .shine
 
 
 .ceremony{
-    margin-top: 3rem;
+    
+    font-family: 'Allura', cursive;
+    font-size: 65px;
+    color: #fff;
+    margin-top: 25rem;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
 }
 .ceremony img{
     margin: 0 auto;
@@ -611,19 +601,22 @@ p .shine
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.ceremony h1{
-    font-size: 38px;
-    font-family: "Raleway", serif;
+.ceremony h2{
+    font-size: 55px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    
 }
 .ceremony span{
-    font-family: "Allura", serif;
-    font-size: 35px;
-    color:  #844414;
+    font-size: 55px;
+    font-family: "Allura", cursive;
+    text-align: center;
+    color: #694C45;
 
 }
 .ceremony p{
-    font-family: "Raleway", serif;
-    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
     color: #fff;
 }
 .ceremony a img{
@@ -640,65 +633,68 @@ hr {
     margin-top: 3rem;
 }
 .vestimenta{
-    margin-top: 3rem;
+    margin-top: 15rem;
 }
 .vestimenta h1{
-    font-size: 45px;
-    font-weight: 700;
-    font-family: "Allura", serif;
-    color: #cc9842;
+    font-size: 60px;
+    font-family: "Allura", cursive;
+    color: #694C45;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
 }
 .vestimenta img{
     width: 100px;
     margin: 0 auto;
 }
 .vestimenta p{
-    font-family: "Raleway", serif;
-    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
     color: #fff;
 }
 
 .lluvia-sobres{
-    margin-top: 3rem;
+    margin-top: 10rem;
 }
 .lluvia-sobres h1{
-    font-size: 45px;
-    font-weight: 700;
-    font-family: "Allura", serif;
-    color: #cc9842;
+    font-size: 60px;
+    font-family: "Allura", cursive;
+    color: #694C45;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
 }
 .lluvia-sobres img{
     width: 100px;
     margin: 0 auto;
 }
 .lluvia-sobres p{
-    font-family: "Raleway", serif;
-    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
     color: #fff;
 }
 
 .message-nice{
-    margin-top: 3rem;
+    margin-top: 10rem;
 }
 .message-nice h1{
-    font-size: 45px;
-    font-weight: 700;
-    font-family: "Allura", serif;
-    color: #cc9842;
+    font-size: 60px;
+    font-family: "Allura", cursive;
+    color: #694C45;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
+
 }
 .message-nice img{
     width: 100px;
     margin: 0 auto;
 }
 .message-nice p{
-    font-family: "Raleway", serif;
-    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
     color: #fff;
 }
 
@@ -706,6 +702,7 @@ hr {
 .message-form {
     max-width: 600px;
     margin: 0 auto;
+    
 }
 
 .message-form textarea {
@@ -726,8 +723,7 @@ hr {
 }
 
 .message-form button {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -748,6 +744,7 @@ hr {
 /*CONFIRMACION FORM*/
 /* Estilos generales para la sección de confirmación */
 .form-confirmacion {
+    margin-top: 15rem;
     padding: 40px 20px;
     background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
@@ -755,19 +752,20 @@ hr {
     margin: 40px auto;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(214, 211, 211, 0.2);
+    
 }
 
 .form-confirmacion h1 {
-    font-size: 36px;
-    font-family: "Allura", serif; /* Fuente elegante */
-    color: #cc9842; /* Color rosa oscuro */
+    font-size: 50px;
+    font-family: "Allura", cursive; /* Fuente elegante */
+    color: #694C45; /* Color rosa oscuro */
     margin-bottom: 20px;
 }
 
-.form-confirmacion p {
-    font-size: 18px;
-    font-family: "Raleway", serif;
-    color: #cc9842;
+.form-confirmacion h1 p {
+    font-size: 38px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -780,9 +778,9 @@ hr {
 }
 
 .form-confirmacion .form-label {
-    font-family: "Raleway", serif;
-    font-size: 14px;
-    color: #cc9842; /* Color rosa oscuro */
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    color: #694C45; /* Color rosa oscuro */
     margin-bottom: 10px;
     display: block;
 }
@@ -794,8 +792,8 @@ hr {
     border: 2px solid #cc9842; /* Borde rosa oscuro */
     border-radius: 10px;
     font-size: 16px;
-    font-family: 'Tilt Neon', serif;
-    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 32px;
     background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
     color: #595757;
 }
@@ -814,8 +812,7 @@ hr {
 
 /* Estilos para el botón de confirmar */
 .form-confirmacion .btn-confirmar {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -835,8 +832,7 @@ hr {
 
 /* Estilos para el botón de WhatsApp */
 .wd_btn .btn-primary {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #bc9135 30%, #c7a24b 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #bc9135 62.5%, #c7a24b 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
     color: #fff;
     border: none;
     padding: 15px 30px;
