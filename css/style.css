@@ -336,6 +336,11 @@ p .shine
          -webkit-animation-name: shine2;
          -webkit-animation-duration: 30s;
          -webkit-animation-iteration-count: infinite;
+         font-size: 24px; /* Tamaño base en pantallas grandes */
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    overflow: hidden; /* Evita desbordamientos */
+    text-overflow: ellipsis; /* Muestra "..." si el texto se corta */
+    transition: font-size 0.3s ease; /* Transición suave al cambiar el tamaño */
         
          
          
@@ -590,7 +595,7 @@ p .shine
     font-family: 'Allura', cursive;
     font-size: 65px;
     color: #fff;
-    margin-top: 25rem;
+    margin-top: 10rem;
     align-items: center;
     text-shadow: 2px 2px 4px rgba(145, 95, 45, 0.718);
 
@@ -612,6 +617,8 @@ p .shine
     font-family: "Allura", cursive;
     text-align: center;
     color: #694C45;
+    letter-spacing: -1px; /* Reduce el espacio entre letras */
+    display: inline-block;
 
 }
 .ceremony p{
@@ -831,27 +838,40 @@ hr {
 }
 
 /* Estilos para el botón de WhatsApp */
+.wd_btn {
+    text-align: center; /* Asegura que el botón esté centrado */
+    display: flex;
+    justify-content: center;
+}
+
 .wd_btn .btn-primary {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
+    display: inline-block;
+    width: 100%; /* Hace que el botón se adapte al contenedor */
+    max-width: 300px; /* Evita que sea demasiado grande en pantallas grandes */
+    padding: 12px 20px;
+    font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "Raleway", serif;
+    text-align: center;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a86f5c 0%, #d09e84 8%, #dfb094 30%, #f1c3a2 40%, transparent 80%), 
+                radial-gradient(ellipse farthest-corner at left top, #e8c6a8 0%, #ebab8d 8%, #e19178 25%, #cc846c 62.5%, #b57462 100%);
+    color: #fff;
+    border: none;
     box-shadow: 0 4px 8px rgba(131, 105, 2, 0.384);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: "Raleway", serif;
 }
 
 .wd_btn .btn-primary:hover {
     box-shadow: 0 6px 12px #FDD5CF;
-    transition:300ms ease-in-out;
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.05);
 }
 
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+
+
+/*MOVILES*/
+/* Ajuste para dispositivos móviles */
+@media screen and (max-width: 480px) {
     .form-confirmacion {
         padding: 20px 10px;
     }
@@ -873,10 +893,6 @@ hr {
         font-size: 16px;
         padding: 10px 20px;
     }
-}
-/*MOVILES*/
-/* Ajuste para dispositivos móviles */
-@media screen and (max-width: 768px) {
     .invitation-img {
         width: 200px; /* Reduce el tamaño de la imagen en móviles */
         display: block; /* Asegura que la imagen sea un bloque */
@@ -891,7 +907,78 @@ hr {
     width: 100%;
     height: 100px;
     }
-    .shine2{
-        font-size: 45px !important; 
+    
+    .wd_btn .btn-primary {
+        font-size: 14px; 
+        padding: 10px 15px; 
+        max-width: 90%; 
     }
+    .shine2 {
+        font-size: 18px; /* Reduce el tamaño en móviles */
+        white-space: normal; /* Permite que el texto se divida en varias líneas */
+        overflow: visible; /* Permite que el texto fluya sin cortarse */
+        text-overflow: clip; /* Elimina el "..." si el texto se divide */
+        max-width: 100%; /* Asegura que el texto no se desborde */
+        line-height: 1; /* Ajusta el interlineado para mejor legibilidad */
+    }
+    .wd_about_wrapper{
+    width: 100%;
+    height: 177px;
+    font-size: 22px !important;
+    
+    }
+    .date-title{
+        margin-top: 23rem;
+    }
+    #clockdiv div > span{
+        font-size: 45px;
+
+    }
+    .remember{
+        font-size: 20px;
+    }
+    .parents h2{
+        font-size: 45px;
+    }
+    .shine3 h3{
+        font-size: 20px;
+    }
+
+    .ceremony img{
+        margin-top: -12rem;
+    }
+    .ceremony h2{
+        font-size: 45px;
+    }
+    .ceremony .span{
+        font-size: 35px; /* Reduce el tamaño en móviles */
+        line-height: 1; /* Mantén el interlineado ajustado */
+        letter-spacing: 1px;
+    }
+    .ceremony p{
+        font-size: 20px;
+    }
+    .lluvia-sobres p{
+        font-size: 20px;
+    }
+    .message-nice p{
+        font-size: 20px;
+    }
+    .vestimenta h1{
+        font-size: 35px !important;
+    }
+    .vestimenta p{
+        font-size: 20px;
+    }
+    .lluvia-sobres h1{
+        font-size: 35px !important;
+    }
+    .message-nice h1{
+        font-size: 35px !important;
+    }
+    .message-nice p{
+        font-size: 20px !important;
+    }
+    
+   
 }
